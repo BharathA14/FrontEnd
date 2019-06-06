@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Route } from '@angular/router';
+import { SprintComponent } from './sprint/sprint.component';
 
-const routes: Routes = [];
+
+const routes: Route[]= [
+  {path:'sprint',component:SprintComponent}
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
