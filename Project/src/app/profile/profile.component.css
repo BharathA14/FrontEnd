@@ -16,8 +16,17 @@
 .btn{
   width:250px;
   height: 30px;
-  
 }
+
+.pass{
+  margin-top:10px;
+  margin-left:20px;
+  width:150px;
+  height:45px;
+  font-size:13px;
+  border-radius:0px;
+}
+
 .lang{
   padding:5px 30px 10px 200px;
 }
@@ -66,7 +75,7 @@
   margin-left:20px;
   border-left-width: 2px;
   border-left:solid;
-  border-color:orange;
+  border-color:rgb(255, 204, 111);
   padding-top: 3px;
   font-weight: 500;
   font-size:18px;
