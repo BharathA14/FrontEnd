@@ -9,6 +9,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { CreateIssueComponent } from './create-issue/create-issue.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,23 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    FormsModule,
+    NgbModule.forRoot(),
+    RouterModule.forRoot([
+      {
+        path:'',
+        component:LoginComponent
+      },
+      {
+        path:'sprint',
+        component:SprintComponent
+      },
+      {
+        path:'profile',
+        component:ProfileComponent
+      },
+      
+    ])
   ],
   providers: [NgbActiveModal],
   bootstrap: [AppComponent],

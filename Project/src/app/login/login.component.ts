@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   user:string;
   pass:string;
   dbuser:string='ajay';
-  dbpass:string='1610';
+  dbpass:string='ajay';
   userid:string;
   credentials:boolean=false;
   submit:boolean=false;
@@ -30,8 +30,8 @@ export class LoginComponent implements OnInit {
 
     }
     if(this.user==this.dbuser && this.pass==this.dbpass){
-      this.credentials=true;
-    }
+      window.location.href = 'http://localhost:4200/sprint';  
+    this.credentials=true;  }
     else{
       this.credentials=false;
     }
@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
     this.psw='';
     this.submit=false;
   }
+
 
 
   ngOnInit() {

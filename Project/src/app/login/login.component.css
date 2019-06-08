@@ -2,9 +2,11 @@
     border: 2px;
     border-style: outset;
     
-    margin: 180px 550px 150px 450px ;
+    margin:auto;
     padding-bottom: 80px;
-    padding-top: 50px;
+    padding-top: 35px;
+    position: relative;
+    width: 600px;
     
     
 
@@ -16,23 +18,18 @@ h1{
 
 }
 label.ip{
-    margin-left: 50px;
-    margin-top: 25px;
-    padding-top: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+label.ip1{
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 input.ip{
     padding-left: 10px;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 5px;
 }
-label.ip1{
-    margin-left: 50px;
-    margin-top: 0px;
-    padding-top: 10px;
-}
-body {
-    margin-left: 3rem ; /* Same as the width of the sidebar */
-    padding: 20px 10px 0px 20px;
-    margin-top:3rem;
-    font-family:" Open Sans, sans-serif;"
-  }
