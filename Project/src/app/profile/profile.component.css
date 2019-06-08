@@ -1,5 +1,93 @@
 .main {
-    margin-left: 3rem; /* Same as the width of the sidebar */
-    padding: 20px 10px;
-    margin-top:3rem;
-  }
+  margin-left: 3rem ; /* Same as the width of the sidebar */
+  padding: 20px 10px 0px 20px;
+  margin-top:3rem;
+}
+.card{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding-bottom:20px;
+
+}
+.dropdown .btn{
+  border-radius: 0px;
+  margin-top: 5px;
+} 
+
+.btn{
+  width:250px;
+  height: 30px;
+  
+}
+.lang{
+  padding:5px 30px 10px 200px;
+}
+
+.dropdown-menu{
+  width:400px;
+  font-size:13px;
+  padding-left: 15px;
+  border-radius:0px;
+}
+
+.Avail_lang{
+  font-size: 10px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  margin-top:0px;
+}
+
+.dropdown-divider{
+  width:300px;  
+}
+#lang{
+  font-size: 10px;
+  margin-left: 0px; 
+  padding-right: 30px;
+  border-radius: 0px;
+  padding-bottom: 12px;
+}
+
+#d_lang{
+  padding-left:0px;
+  padding-bottom: 0px;
+
+}
+
+#lang_div{
+  margin-bottom:0px
+}
+.row{
+  margin-top: 10px;
+
+}
+
+.value{
+  margin-top:0px;
+  margin-left:20px;
+  border-left-width: 2px;
+  border-left:solid;
+  border-color:orange;
+  padding-top: 3px;
+  font-weight: 500;
+  font-size:18px;
+  margin-bottom: 4px;
+
+}
+.values{
+  margin-bottom:3px;
+  padding-left:5px;
+
+}
+
+.head{
+  font-size:14px;
+  margin-left:40px;
+  margin-bottom:2px;
+  font-weight:500;
+}
+
+.exit_project{
+  font-size:10px;
+  padding-top:6px;
+  padding-left:10px;
+}

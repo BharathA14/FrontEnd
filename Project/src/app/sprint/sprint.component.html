@@ -10,17 +10,18 @@
        <h3 class=col-8>Sprint</h3>
       
       <div class="two_buttons">
-      <button class="btn btn-dark btn-square " role ="button" data-toggle="modal" data-target="#Create_Issue"  (click)="open()">
+      <a class="btn btn-dark btn-square "  routerLink="issue">
         Create new Issue
-      </button>
+      </a>
       <button type="button" class="btn btn-warning btn-square " data-toggle="modal" data-target="#Create_Sprint">
         Create New Sprint  
       </button>
-    
+      
     </div>
-    </div>
- 
-
+  </div>
+  
+  
+  <router-outlet></router-outlet>
 
 
 
@@ -88,7 +89,6 @@
      </div>
    </div>
  </div>
-
 
 
 

@@ -4,21 +4,128 @@
   </head>
 
 <body class="main">
-
-<h3>My Profile</h3>
+<div class="row">
+    <h3 class=col-2>My Profile</h3>
+<span class="lang" >Language</span>
 
 <div class="dropdown">
-    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      English
+    <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
+
+    <div class="dropdown-menu shadow sticky-top" aria-labelledby="dropdownMenuOffset">
+      
+      <div class="dropdown-item" id="d_lang">
+          <div class="form-group" >
+              <input type="text" class="form-control" id="lang" placeholder="Search for Languages" >
+            </div>  
+
+
+      </div>
+      <div class="dropdown-divider" id="lang_div"></div>
+
+
+      <div class="dropdown-item-text text-muted " style="padding-left:10px; padding-top:0px;" >
+            <p class="Avail_lang">
+              Available Languages
+            </p>
+          </div>
+      
       <a class="dropdown-item" href="#">English</a>
+      <div class="dropdown-divider"></div>
+
       <a class="dropdown-item" href="#">French</a>
+      <div class="dropdown-divider"></div>
+
       <a class="dropdown-item" href="#">Tamil</a>
+      <div class="dropdown-divider"></div>
+
       <a class="dropdown-item" href="#">Hindi</a>
+      <div class="dropdown-divider"></div>
+
       <a class="dropdown-item" href="#">Spanish</a>
+      
     </div>
   </div>
+
+</div>
+
+  <div class="card " style="margin-top:15px;">
+    
+    <div class="row">
+      
+
+        <label class="head">Name</label>
+      </div>
+      <div class="row value">
+
+        <label class="values">Your Name</label>
+      </div>
+
+      
+      
+      <div class="row">
+
+        <label class="head"> Username</label>
+
+      </div>
+      <div class="row value">
+        <label class="values">someuser@email.com</label>
+      </div>
+      
+      
+      <div class="row">
+
+        <label class="head"> Password</label>
+
+      </div>
+      <div class="row value">
+        <label class="values">Last updated</label>
+      </div>
+
+
+      <div class="row">
+
+          <label class="head"> Nationality</label>
+  
+        </div>
+        <div class="row value">
+          <label class="values">Indian</label>
+        </div>
+  
+
+      <div class="row">
+
+            <label class="head"> Projects</label>
+    
+          </div>
+          <div class="row value">
+            <label class="values">Project#1 </label><a class="exit_project" href="#">-Leave project</a>
+          </div>
+          
+          <div class="row value">
+              <label class="values">Project#2 </label><a class="exit_project" href="#">-Leave project</a>
+            </div>
+            <div class="row value">
+                <label class="values">Project#3 </label><a class="exit_project" href="#">-Leave project</a>
+              </div>  
+
+      </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

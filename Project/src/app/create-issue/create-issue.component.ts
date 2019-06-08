@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateIssueComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+
+    // $(document).ready(function(){
+    //   $("#myModal").modal();
+    //   );
+    
+   }
 
   ngOnInit() {
   }
