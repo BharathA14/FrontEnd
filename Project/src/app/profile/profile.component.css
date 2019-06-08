@@ -2,6 +2,8 @@
   margin-left: 3rem ; /* Same as the width of the sidebar */
   padding: 20px 10px 0px 20px;
   margin-top:3rem;
+  font-family:" Open Sans, sans-serif;"
+
 }
 .card1{
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
