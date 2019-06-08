@@ -1,0 +1,27 @@
+#log{
+    border: 2px;
+    border-style: outset;
+    
+    margin: 180px 450px 150px 450px ;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    
+    
+
+}
+h1{
+    padding-left: 350px;
+    margin-top: 10px;
+
+
+}
+label.ip{
+    margin-left: 40px;
+    margin-top: 25px;
+    padding-top: 50px;
+}
+input.ip{
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
