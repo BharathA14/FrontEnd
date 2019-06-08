@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  name:string="Your Name";
+  usernmae:string;
+  password:string;
+  nationality:string;
+  projects: string;
   constructor() { }
 
   ngOnInit() {
