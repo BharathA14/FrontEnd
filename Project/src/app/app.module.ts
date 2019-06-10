@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { CreateIssueComponent } from './create-issue/create-issue.component';
 import { LoginComponent } from './login/login.component';
+import { IssuesComponent } from './issues/issues.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginComponent } from './login/login.component';
     SprintComponent,
     ProfileComponent,
     CreateIssueComponent,
-    LoginComponent
+    LoginComponent,
+    IssuesComponent
   ],
   imports: [
     BrowserModule,
