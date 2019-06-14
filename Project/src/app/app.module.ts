@@ -10,6 +10,7 @@ import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { CreateIssueComponent } from './create-issue/create-issue.component';
 import { LoginComponent } from './login/login.component';
 import { IssuesComponent } from './issues/issues.component';
+import { TeamissueComponent } from './teamissue/teamissue.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IssuesComponent } from './issues/issues.component';
     ProfileComponent,
     CreateIssueComponent,
     LoginComponent,
-    IssuesComponent
+    IssuesComponent,
+    TeamissueComponent
   ],
   imports: [
     BrowserModule,
