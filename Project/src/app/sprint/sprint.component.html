@@ -1,0 +1,104 @@
+<html>
+  <head>
+    
+    <title> </title>
+  </head>
+
+  <body class="main">
+    <div class="row">
+     
+       <h3 class=col-8>Sprint</h3>
+      
+      <div class="two_buttons">
+      <a class="btn btn-dark btn-square "  routerLink="issue">
+        Create new Issue
+      </a>
+      <button type="button" class="btn btn-warning btn-square " data-toggle="modal" data-target="#Create_Sprint">
+        Create New Sprint  
+      </button>
+      
+    </div>
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+
+
+
+<!-- Create Sprint Modal -->
+<div class="modal fade" id="Create_Sprint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 30px 30px;" >
+
+          <div class="row" style="padding-bottom: 15px;">
+            <div class="col">
+
+              <h5 class="modal-title" id="exampleModalLabel">Create a new sprint</h5>
+            </div>
+            <div class="col">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+          </div>
+      
+          <form>
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="Spirit_number">Sprint Number</label>
+                <input type="text" class="form-control" id="Sprint_Number" placeholder="13">
+              </div>
+            </div>  
+              <div class="row">
+
+                
+                <div class="form-group col-md-4">
+                  <label for="Spirit_created">Sprint Created On</label>
+                  <input type="text" class="form-control" id="Sprint_Created" placeholder="13/06/2013">
+                </div>
+                
+                <div class="form-group col-md-8 ml-auto">
+                  <label for="Created_by">Created By</label>
+                  <input type="text" class="form-control" id="Sprint_Created" placeholder="Current User">
+                </div>
+                
+              </div>
+              <div class="row">
+              <div class="form-group col-md-4">
+                  <label for="Spirit_Period">Sprint Period</label>
+                  <input type="text" class="form-control" id="Sprint_Period" placeholder="21">
+              </div>
+
+              <div class="form-group col-md-8 ml-auto">
+                  <label for="Spirit_Ends">Sprint Ends On</label>
+                  <input type="text" class="form-control" id="Sprint_Period" placeholder="21/06/2019">
+              </div>
+            </div>
+
+           
+            </form>
+
+<!--Form to be displayed-->
+       </div>
+       <div class="modal-footer " >
+         <button type="button" class="btn btn-light btn" data-dismiss="modal">Cancel</button>
+         <button type="button" class="btn btn-warning">Create Sprint</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+ </body>
+
+  
+
+</html>

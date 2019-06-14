@@ -1,0 +1,38 @@
+#log{
+    border: 2px;
+    border-style: outset;
+    
+    margin: 180px ;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    
+    
+
+}
+h1{
+    padding-left: 350px;
+    margin-top: 10px;
+
+
+}
+label.ip{
+    margin-left: 50px;
+    margin-top: 25px;
+    padding-top: 50px;
+}
+input.ip{
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+label.ip1{
+    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+body {
+    margin-left: 3rem ; /* Same as the width of the sidebar */
+    padding: 20px 10px 0px 20px;
+    margin-top:3rem;
+    font-family:" Open Sans, sans-serif;"
+  }
