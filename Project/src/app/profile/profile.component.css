@@ -1,13 +1,21 @@
 .main {
-  margin-left: 3rem ; /* Same as the width of the sidebar */
-  padding: 20px 10px 0px 20px;
-  margin-top:3rem;
-  font-family:" Open Sans, sans-serif;"
+  width:1450px;
+  margin:50px 70px;
+  height: auto;
+  
+  padding: 35px 10px 0px 20px;
+  font-family:" Open Sans, sans-serif";
 
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .card1{
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding-bottom:20px;
+  padding-top: 15px;
   margin-right: 30px
 
 }
@@ -116,10 +124,10 @@
   height:250px;
   width: 200px;
   border-color: black;
-  margin-left:140px;;
-  margin-top:3rem;
+  margin-left:210px;;
+  margin-top:0.7rem;
   z-index: 10000;
   box-shadow: 0;
-  margin-right: 30px;
+  margin-right: 10px;
   border-color: rgba(153, 148, 148, 0.301);
 }

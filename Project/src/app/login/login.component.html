@@ -5,7 +5,7 @@
     <label class="ip"><b>Username</b><br><input style="width: 500px;height:45px;margin-bottom: 50px" class="ip" type="text"  [value]="uname" [(ngModel)]="uname"></label>
   
     <label class="ip1"><b>Password</b><br><input style="width: 500px;height:45px;" class="ip" type="password"  [value]="psw" [(ngModel)]="psw"></label><br><br>
-    <p *ngIf="!credentials && submit" style="color: red;margin-left:180px;font-size: 20px">wrong username or password</p>
+    <p *ngIf="!credentials && submit" style="color: black;margin-left:180px;font-size: 20px">wrong username or password</p>
   
     <button style="margin-left:245px;width: 135px;height:40px;" (click)="onreset()">Reset</button>
   

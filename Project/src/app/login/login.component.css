@@ -1,7 +1,7 @@
 #log{
     border: 2px;
     border-style: outset;
-    
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
     margin:auto;
     padding-bottom: 80px;
     padding-top: 35px;

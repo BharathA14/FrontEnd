@@ -1,8 +1,14 @@
 .main {
-    margin-left: 3rem ; /* Same as the width of the sidebar */
-    padding: 20px 10px 0px 20px;
+    width: 1400px;
+    margin-left: 4rem ; /* Same as the width of the sidebar */
+    padding: 20px 0px 0px 20px;
     margin-top:3rem;
     font-family:" Open Sans, sans-serif;"
+  }
+  .col-8{
+    margin-top: 24px;
+    margin-left: 20px;
+    position: relative;
   }
 
 .modal-body{
@@ -16,9 +22,9 @@
 }
 
 .btn{
-  margin-right: 15px;
-  margin-left:30px;
-  margin-bottom: 10px;
+  position: relative;
+  left: 155px;
+  margin-right: 18px;
 }
 
 .btn.btn-lg{

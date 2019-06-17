@@ -1,0 +1,53 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="top">
+  <h2 class="col-8">Issues</h2>
+  <p class="col-8" style="left: 180px;top:-14px" >Showing sprint</p>
+
+  <div class="dropdown">
+      <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+      </button>
+      <div class="dropdown-menu shadow sticky-top" aria-labelledby="dropdownMenuOffset">
+      
+          <div class="dropdown-item" id="d_lang">
+              <div class="form-group" >
+                  <input type="text" class="form-control" id="lang" placeholder="Search for sprint" >
+                </div>  
+    
+    
+          </div>
+          <div class="dropdown-divider" id="lang_div"></div>
+    
+    
+          <div class="dropdown-item-text text-muted " style="padding-left:10px; padding-top:0px;" >
+                <p class="Avail_lang">
+                  <b>last 5 sprints</b>
+                </p>
+              </div>
+          
+          <button type="menu" class="dropdown-item">sprint 11.1</button>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#">sprint 10</a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#">sprint 9.2</a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#">sprint 9.1</a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#">sprint 9</a>
+          
+        </div>
+      </div>
+    
+    </div>
+     <div class="box1">
+      <h1 style="text-align: center;color: rgb(26, 189, 26);font-size: 60px"><b>{{days}}</b></h1><br>
+      <h5 style="text-align: center;padding-bottom: 20px">Days Remaining</h5>
+
+  </div>
+  <app-display></app-display>
+
+  
