@@ -6,7 +6,8 @@
   }
 
 .modal-body{
-  font-size: 13px;
+  
+  border-radius: 0px;
 }
 
 .head_title{
@@ -19,6 +20,7 @@
   margin-right: 15px;
   margin-left:30px;
   margin-bottom: 10px;
+  border-radius: 0px;
 }
 
 .btn.btn-lg{
@@ -29,4 +31,54 @@
 .modal-footer{
 
   border: none;
+}
+
+
+
+/* issue */
+input{
+  border-radius: 0px; /*update to both sprint and issue details*/
+
+}
+
+.inner_warning{
+  padding:20px 15px;
+}
+
+label{
+  font-size: 12px;
+}
+
+.last{
+  width:120px;
+  margin-left:0px;
+  font-size:15px;
+}
+.open{
+  background-color: rgb(137, 192, 224);
+  border-color: #D1EAF5;
+}
+
+.progress1{
+  background-color: #4CAB2B;
+  border-color:#4CAB2B;
+}
+
+.qa{
+  background-color: rgb(231, 231, 104);
+  border-color: rgb(231, 231, 104)
+}
+
+.close1{
+  background-color: #FFA07A;
+  border-color: #FFA07A;
+}
+
+.reopen{
+  background-color: rgb(224, 110, 110);
+  border-color: rgb(224, 110, 110);
+}
+
+.modal{
+overflow-y: scroll;
 }

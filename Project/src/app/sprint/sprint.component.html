@@ -2,6 +2,7 @@
   <head>
     
     <title> </title>
+    
   </head>
 
   <body class="main">
@@ -16,6 +17,9 @@
       <button type="button" class="btn btn-warning btn-square " data-toggle="modal" data-target="#Create_Sprint">
         Create New Sprint  
       </button>
+      <button type="button" class="btn btn-warning btn-square " data-toggle="modal" data-target="#Create_issue_detail">
+        Issue Details 
+      </button>
       
     </div>
   </div>
@@ -26,7 +30,7 @@
 
 
 <!-- Create Sprint Modal -->
-<div class="modal fade" id="Create_Sprint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="Create_Sprint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body" style="padding: 30px 30px;" >
@@ -83,14 +87,112 @@
 <!--Form to be displayed-->
        </div>
        <div class="modal-footer " >
-         <button type="button" class="btn btn-light btn" data-dismiss="modal">Cancel</button>
-         <button type="button" class="btn btn-warning">Create Sprint</button>
+         <button type="button" class="btn " data-dismiss="modal">Cancel</button>
+         <button type="button" class="btn btn-warning inner_warning">Create Sprint</button>
        </div>
      </div>
    </div>
  </div>
 
 
+
+<!-- Issue_detail -->
+
+<div class="modal fade  " id="Create_issue_detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 30px 30px;" >
+          
+          <form>
+          <div class="row" style="padding-bottom: 15px;">
+            <div class="col">
+
+              <h5 class="modal-title" id="exampleModalLabel">Heading</h5>
+            </div>
+            <div class="col">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+          </div>
+      
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label for="Issue_Heading">Issue Heading</label>
+                <input type="text" class="form-control" id="Issue_head" placeholder="Some title long or short">
+              </div>
+            </div>  
+              <div class="row">
+
+                
+                <div class="form-group col-md-4">
+                  <label for="Issue_Priority">Issue Priority</label>
+                  <input type="text" class="form-control" id="Issue_Prior" placeholder="Drop down">
+                </div>
+                
+                <div class="form-group col-md-8 ml-auto">
+                  <label for="Reported_by">Reported By</label>
+                  <input type="text" class="form-control" id="Sprint_Created" placeholder=" User Name">
+                </div>
+                
+              </div>
+              <div class="row">
+              <div class="form-group col-md-3">
+                  <label for="labels">Sprint </label>
+                  <input type="text" class="form-control" id="sprint" placeholder="21">
+              </div>
+
+              <div class="form-group col-md-3">
+                  <label for="labels">Fix Version</label>
+                  <input type="text" class="form-control" id="fix_version" placeholder="21">
+              </div>
+
+              <div class="form-group col-md-3">
+                  <label for="labels">Story Points</label>
+                  <input type="text" class="form-control" id="story_points" placeholder="21">
+              </div>
+              
+              <div class="form-group col-md-3">
+                  <label for="labels">Issue Reported Date</label>
+                  <input type="text" class="form-control" id="reported_date" placeholder="21">
+              </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="labels">Issue Description/Story </label>
+                    <textarea  class="form-control" id="story" rows="5" placeholder="Huge Story"></textarea>
+                </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-12">
+                  <label for="labels">Assign it to </label>
+                  <input type="text" class="form-control" id="assign to" placeholder="Some User">
+
+              </div>
+            </div>
+            <div class="row" style="padding-left: 15px;">
+            
+                <label for="labels" style="width: 100%">Status</label>
+                <button type="button" class="btn btn-secondary btn-square last open">Open</button>
+                <button type="button" class="btn btn-secondary btn-square last progress1">In Progress</button>
+                <button type="button" class="btn btn-secondary btn-square last qa">QA</button>
+                <button type="button" class="btn btn-secondary btn-square last close1">Close</button>
+                <button type="button" class="btn btn-secondary btn-square last reopen">Reopen</button>
+                
+                </div>
+      
+            </form>
+
+<!--Form to be displayed-->
+       </div>
+       <div class="modal-footer " >
+         <button type="button" class="btn " data-dismiss="modal">Cancel</button>
+         <button type="button" class="btn btn-warning inner_warning">Update Issue</button>
+       </div>
+     </div>
+   </div>
+ </div>
 
 
 
