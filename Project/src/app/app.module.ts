@@ -12,7 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IssueComponent } from './issue/issue.component';
-import { DisplayComponent } from './display/display.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './card/card.component'
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { DisplayComponent } from './display/display.component';
     CreateIssueComponent,
     LoginComponent,
     IssueComponent,
-    DisplayComponent,
+    CardComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path:'',
