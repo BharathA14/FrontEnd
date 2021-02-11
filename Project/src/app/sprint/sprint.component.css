@@ -1,9 +1,21 @@
+
+
 .main {
-    margin-left: 3rem ; /* Same as the width of the sidebar */
-    padding: 20px 10px 0px 20px;
-    margin-top:3rem;
-    font-family:" Open Sans, sans-serif;"
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding:90px 0px 0px 6rem  ; /* Same as the width of the sidebar */
+  font-family:" Open Sans, sans-serif";
   }
+ 
+.display{
+  position: absolute;
+  left: 111px;
+  right: 50px;
+  top: 160px
+}
+  
 
 .modal-body{
   font-size: 13px;
@@ -14,11 +26,18 @@
   font-size: 15px;
 
 }
+.two_buttons
+{
+  position: absolute;
+  margin-top: 8px; 
+  right: 25px;
+  
+}
 
 .btn{
-  margin-right: 15px;
-  margin-left:30px;
-  margin-bottom: 10px;
+  position: relative;
+  margin-right: 10px;
+    
 }
 
 .btn.btn-lg{
@@ -29,4 +48,25 @@
 .modal-footer{
 
   border: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 650px){
+  .two_buttons{
+    margin-top: 50px;
+    left:85px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .btn{
+    width: 100px;
+    height:60px;
+  }
+  .col-8{
+    margin-top: -15px;
+  }
 }

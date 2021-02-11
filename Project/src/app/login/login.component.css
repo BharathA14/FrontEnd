@@ -1,35 +1,143 @@
-#log{
-    border: 2px;
-    border-style: outset;
-    
-    margin:auto;
-    padding-bottom: 80px;
-    padding-top: 35px;
+
+.body{
+	height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex-container{
+    display: flex;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    width: 100%;
     position: relative;
-    width: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 5vw;
+    border: 2px whitesmoke;
+
+    background-color: whitesmoke;
     
-    
+}
+
+#log{
+    position: relative;
+    border: 2px whitesmoke;
+    border-style: solid;
+    overflow: hidden;
+    align-self: center;
+    border-radius: 10px; 
+    width: 580px;
+    margin-top: 80px;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 
 }
-h1{
-    padding-left: 350px;
+.i{
     margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height:40px;
+    padding: 10px;
+}
+.b1{
+    background-color:whitesmoke;
+    line-height: 1.2;
+    height: 45px;
+    width: 100px;
+    margin-left: 240px;
+    border: 0px;
+    position: relative;
+    
+}
+.b1:hover{
+    color: blue;
+}
+.b2{
+    position: relative;
+    background-color:gold;
+    display: inline-block;
+    border: 0px;
+    line-height: 1.2;
+    height: 45px;
+    width: 100px;
+    margin-left: 20px;
+}
+.b2 :hover{
+    background-color: goldenrod;
+}
+.ip{
+    width: 100%;
+    position: relative;
+}
 
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #log{
+        width: 70vw;
+        margin-top: 7vw;
+        padding: 50px 55px 50px 55px;
 }
-label.ip{
-    margin-left: 40px;
-    margin-top: 20px;
-    padding-top: 30px;
+    .b1{
+        margin-left: 200px;
+    }
+    
+    .i{
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+    }
 }
 
-label.ip1{
-    margin-left: 40px;
-    margin-top: 20px;
-    padding-top: 10px;
-}
-input.ip{
-    padding-left: 10px;
-    margin-left: 0px;
-    margin-top: 5px;
-}
+  
+@media only screen and (max-width: 650px) {
+        /* For mobile phones: */
+        #log{
+            position: relative;
+            width: 70vw;
+            margin-top: 7vw;
+    
+        }
+        .b1{
+            position: relative;
+            width: 53px;
+            float: right;
+            height: 35px;
+            background-color: white;
+        }
+        .b2{
+            margin-top: 8px;
+            margin-left: 0px;
+            width: 100%;
+            height: 35px;
+        }
+        .b2:hover{
+            background-color: goldenrod;
+        }
+        .i{
+            margin-top: 10px;
+            height: 30px;
+            border-bottom: 2px black;
+        }
+        #log{
+            padding: 30px 30px 30px 30px;
+    
+        }
+        .top{
+            height: 7vw;
+        }
+
+
+  }
+
+

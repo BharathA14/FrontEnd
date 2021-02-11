@@ -1,0 +1,46 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="main">
+<div class="top">
+  <h2 class="col-8">Issues</h2>
+  <h6 class="col-9"><b>Showing sprint</b></h6>
+
+  <div class="dropdown">
+      <button style="font-size: 15px;width: 190px;" class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       {{sprint}}
+      </button>
+      <div class="dropdown-menu shadow sticky-top" aria-labelledby="dropdownMenuOffset">
+      
+          <div class="dropdown-item" id="d_lang">
+              <div class="form-group" >
+                  <input type="text" class="form-control" id="lang" placeholder="Search for sprint" >
+                </div>  
+    
+    
+          </div>
+          <div class="dropdown-divider" id="lang_div"></div>
+    
+    
+          <div class="dropdown-item-text text-muted " style="padding-left:10px; padding-top:0px;" >
+                <p class="Avail_lang">
+                  <b>last 5 sprints</b>
+                </p>
+              </div>
+          <div *ngFor="let sprints of sprintlist">
+          <button type="menu" (click)="selectsprint(sprints)" class="dropdown-item">sprint {{sprints}}</button>
+          <div class="dropdown-divider"></div>
+          </div>
+          
+        </div>
+      </div>
+    
+    </div>
+     <div class="box1">
+      <h1 style="text-align: center;color: rgb(26, 189, 26);font-size: 60px"><b>{{days}}</b></h1><br>
+      <h5 style="text-align: center;padding-bottom: 20px">Days Remaining</h5>
+
+  </div>
+  <div class="display"><app-card></app-card></div>
+</div>
+
+
+  

@@ -11,6 +11,9 @@ import { CreateIssueComponent } from './create-issue/create-issue.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { IssueComponent } from './issue/issue.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './card/card.component'
 
 @NgModule({
   declarations: [
@@ -19,13 +22,17 @@ import { RouterModule } from '@angular/router';
     SprintComponent,
     ProfileComponent,
     CreateIssueComponent,
-    LoginComponent
+    LoginComponent,
+    IssueComponent,
+    CardComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path:'',
@@ -39,6 +46,12 @@ import { RouterModule } from '@angular/router';
         path:'profile',
         component:ProfileComponent
       },
+      {
+        path:'issue-details',
+        component:IssueComponent
+      },
+     
+      
       
     ])
   ],

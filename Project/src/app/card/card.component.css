@@ -1,0 +1,36 @@
+
+
+.scrolling-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+  
+  }
+  
+  
+  .open .card{
+    position: relative;
+    background-color:rgb(173, 247, 236);
+  
+  }
+  .card{
+    position: relative;
+    flex: 0 0 auto;
+  
+    border-radius: 0;
+  }
+  
+  .scrolling-wrapper::-webkit-scrollbar {
+    height: 0.5em;
+    background-color: rgba(128, 128, 128, 0.459);
+  }
+  .scrolling-wrapper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(119, 118, 118, 0.158);
+  }
+  .scrolling-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.671);
+  border-radius:5px;
+  
+  
+  }

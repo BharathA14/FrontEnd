@@ -1,17 +1,16 @@
-<div style="border: 2px;margin: 0px 20px 130px 20px;background-color: whitesmoke;height: 100px;">
-  <img src="https://raw.githubusercontent.com/BharathA14/FrontEnd/Bharath/Project/src/app/navigation-bar/goalwise.PNG" style="height: 85px;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="body">
+<div class="flex-container">
+  <div class="top" >
+    <img src="https://raw.githubusercontent.com/BharathA14/FrontEnd/Bharath/Project/src/app/navigation-bar/goalwise.PNG" style="height: 5.1vw;">
   </div>
-  <div id="log">
-    <label class="ip"><b>Username</b><br><input style="width: 500px;height:45px;margin-bottom: 50px" class="ip" type="text"  [value]="uname" [(ngModel)]="uname"></label>
-  
-    <label class="ip1"><b>Password</b><br><input style="width: 500px;height:45px;" class="ip" type="password"  [value]="psw" [(ngModel)]="psw"></label><br><br>
-    <p *ngIf="!credentials && submit" style="color: red;margin-left:180px;font-size: 20px">wrong username or password</p>
-  
-    <button style="margin-left:245px;width: 135px;height:40px;" (click)="onreset()">Reset</button>
-  
-      <button style="margin-left:40px;background-color: gold;width: 135px;height:40px;" (click)="onsubmit()">Sign In</button>
-  
-    <p *ngIf="credentials"></p>
-    
-  
+  <div id="log" >
+    <label class="ip">Username<input class="i" type="text"  [value]="uname" [(ngModel)]="uname"></label>
+    <br><br><br>
+    <label class="ip">Password<input class="i" type="password"  [value]="psw" [(ngModel)]="psw"></label><br><br>
+    <button class="b1" (click)="onreset()">Reset</button>
+    <button class="b2" (click)="onsubmit()">Sign In</button>
+    <p>{{result}}</p>
   </div>
+</div>
+</div>

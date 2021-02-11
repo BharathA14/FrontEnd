@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpserviceService } from '../httpservice.service';
+// import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+ 
   uname:string;
   psw:string;
   user:string;
@@ -13,29 +16,21 @@ export class LoginComponent implements OnInit {
   dbuser:string='ajay';
   dbpass:string='ajay';
   userid:string;
+  result:any;
   credentials:boolean=false;
   submit:boolean=false;
 
 
-  constructor() { }
+  constructor(private http:HttpserviceService) { }
   onsubmit(){
-    if(this.uname=='' || this.psw==''){
-      window.alert("Fill all the required fields");
-      this.submit=false;
-    }
-    else{
-    this.user=this.uname;
-    this.pass=this.psw;
-    this.submit=true;
+    this.http.update().subscribe((data)=>{
+    this.result=data["name"];
+    console.log(this.result);})
+    
+  }  
+      
 
-    }
-    if(this.user==this.dbuser && this.pass==this.dbpass){
-      window.location.href = 'http://localhost:4200/sprint';  
-    this.credentials=true;  }
-    else{
-      this.credentials=false;
-    }
-  }
+  
   onreset(){
     this.uname='';
     this.psw='';

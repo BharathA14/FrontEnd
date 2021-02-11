@@ -1,29 +1,31 @@
-<html>
-  <head>
-    
-    <title> </title>
-  </head>
+
   <app-navigation-bar></app-navigation-bar>
+
 
 
   <body class="main">
     <div class="row">
      
-       <h3 class=col-8>Sprint</h3>
+       <h2 class=col-8>Sprint</h2>
+      </div>
+
       
-      <div class="two_buttons">
-      <a class="btn btn-dark btn-square "  routerLink="issue">
+      <div class="two_buttons" >
+      <button class="btn btn-dark btn-square "  routerLink="issue">
         Create new Issue
-      </a>
+      </button>
       <button type="button" class="btn btn-warning btn-square " data-toggle="modal" data-target="#Create_Sprint">
         Create New Sprint  
       </button>
       
     </div>
-  </div>
   
   
-  <router-outlet></router-outlet>
+  <div class="display">  <app-card></app-card></div>
+
+
+        </body>
+          
 
 
 
@@ -94,13 +96,13 @@
 
 
 
+ 
 
 
 
 
 
- </body>
 
-  
 
-</html>
+
+ 
